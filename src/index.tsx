@@ -8,6 +8,8 @@ import {
   assert
 } from 'live-editor/client'
 
+export * from 'live-editor/client'
+
 interface Props {
   options: EditorOptions
   containerStyle?: React.CSSProperties

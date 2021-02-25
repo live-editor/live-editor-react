@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 
-import { LiveEditor } from 'live-editor-react'
-import { Editor, EditorOptions, EditorDoc, domUtils } from 'live-editor/client';
+import { LiveEditor, Editor, EditorOptions, EditorDoc, domUtils } from 'live-editor-react'
 
 const appId = '';
 

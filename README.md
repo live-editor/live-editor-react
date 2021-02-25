@@ -13,7 +13,7 @@ npm install --save live-editor-react
 ```tsx
 import React, { Component } from 'react'
 
-import { LiveEditor } from 'live-editor-react'
+import { LiveEditor, EditorOptions } from 'live-editor-react'
 
 const appId = '';
 
