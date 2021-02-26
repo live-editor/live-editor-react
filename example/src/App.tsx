@@ -1,10 +1,11 @@
 import React, { useEffect } from 'react'
 
-import { LiveEditor, Editor, EditorOptions, EditorDoc, domUtils } from 'live-editor-react'
+import { LiveEditor, Editor, EditorOptions, EditorDoc, domUtils, assert } from 'live-editor-react'
 
 const appId = '';
 
-function handleUploadResource(file: File): Promise<string> {
+function handleUploadResource(editor: Editor, file: File): Promise<string> {
+  assert(editor);
   return domUtils.fileToDataUrl(file);
 }
 
