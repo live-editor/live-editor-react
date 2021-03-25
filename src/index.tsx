@@ -16,10 +16,14 @@ interface Props {
   editorStyle?: React.CSSProperties
   containerClassName?: string
   className?: string
+  userId: string
+  displayName: string
+  avatarUrl: string
   appId: string
   docId: string
   permission: AuthPermission
   accessToken: string
+  userData?: any
   onCreate?: (editor: Editor) => void
   onDestroy?: (editor: Editor) => void
 }
@@ -42,10 +46,13 @@ export const LiveEditor = (props: Props) => {
     //
     const auth: AuthMessage = {
       appId: props.appId,
-      userId: props.options.user.userId,
+      userId: props.userId,
+      displayName: props.displayName,
+      avatarUrl: props.avatarUrl,
       docId: props.docId,
       token: props.accessToken,
-      permission: props.permission
+      permission: props.permission,
+      userData: props.userData
     }
 
     assert(editorContainerRef.current)
