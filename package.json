@@ -1,6 +1,6 @@
 {
   "name": "live-editor-react",
-  "version": "0.0.241",
+  "version": "0.0.317",
   "description": "live editor react component",
   "author": "live-editor",
   "license": "MIT",
@@ -62,6 +62,6 @@
     "dist"
   ],
   "dependencies": {
-    "live-editor": "^0.0.241"
+    "live-editor": "^0.0.317"
   }
 }
